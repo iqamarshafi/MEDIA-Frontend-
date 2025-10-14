@@ -1,0 +1,44 @@
+.feed{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 100%;
+        // margin-top: 60px;
+        margin-inline: 20px;
+        
+        display: flex;
+        gap: 30px;
+        .left-part{
+            // width: 65%;
+           
+            height: 400px;
+            
+        }
+        .right-part{
+            // width: 35%;
+           
+            height:400px;
+            margin-top: 20px;
+            margin-right: 20px;
+          
+           
+            .suggestion{
+                margin-top: 40px;
+            }
+        }
+        .title{
+            margin-bottom: 20px;
+        }
+    }
+     /* ✅ Responsive styles */
+  @media (max-width: 768px) {
+    .left-part{
+        margin-right: 20px;
+    }
+    .right-part{
+        display: none;
+    }
+  }
+}

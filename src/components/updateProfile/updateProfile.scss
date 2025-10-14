@@ -1,0 +1,60 @@
+.updateProfile{
+    .container{
+        display: flex;
+        margin: 40px;
+        .left-part{
+            flex:1;
+            text-align: center;
+            .input-user{
+                img{
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    object-fit: fill;
+                }
+
+            }
+            input{
+                display: none;
+            }
+            
+        }
+        .right-part{
+            flex:3;
+            margin-left: 30px;
+            padding: 15px;
+            border-radius: 4px;
+
+                form{
+                border: 1px solid var(--border-color);
+                padding: 20px;
+                    input{
+
+                        display: block;
+                        width: 100%;
+                        margin-top: 20px;
+                        padding: 10px;
+                    }
+                    .save-btn{
+                        margin-top: 20px;
+                    }
+                }
+            .delete-account{
+                border: 2px solid var(--border-color);
+                border-radius: 6px;
+                padding: 10px 20px;
+                color:white;
+                background-color: red;
+                margin-top: 10px;
+            }
+        }
+    }
+           /* ✅ Responsive styles */
+  @media (max-width: 768px) {
+   .container{
+    display: block;
+    }
+   }
+  
+    
+}
